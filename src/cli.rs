@@ -15,9 +15,6 @@ enum Commands{
         
         #[arg(short,long)]
         output: String,
-
-        #[arg(short,long)]
-        password: String,
     },
 
     Decrypt{
@@ -26,8 +23,5 @@ enum Commands{
         
         #[arg(short,long)]
         output: String,
-
-        #[arg(short,long)]
-        password: String,
     }
 }
