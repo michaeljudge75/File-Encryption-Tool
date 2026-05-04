@@ -10,18 +10,18 @@ struct Cli{
 #[derive(Subcommand)]
 enum Commands{
     Encrypt{
-        #[arg(short,long)]
+        #[arg(short, long, help = "Path to the file you would like to encrypt")]
         input: String,
         
-        #[arg(short,long)]
+        #[arg(short, long, help = "Path where you would like the encrypted file to be saved")]
         output: String,
     },
 
     Decrypt{
-        #[arg(short,long)]
+        #[arg(short,long, help = "Path to the file you would like to encrypt")]
         input: String,
         
-        #[arg(short,long)]
+        #[arg(short,long, help = "Path where you would like the encrypted file to be saved")]
         output: String,
     }
 }
